@@ -47,10 +47,17 @@ export const ProductList = () => {
     const is488=useMediaQuery(theme.breakpoints.down(488))
 
     const brands=useSelector(selectBrands)
+    console.log('brands', brands)
     const categories=useSelector(selectCategories)
+    console.log('categories', categories)
     const products=useSelector(selectProducts)
     const totalResults=useSelector(selectProductTotalResults)
+    console.log('totalResults', totalResults)
     const loggedInUser=useSelector(selectLoggedInUser)
+
+    console.log('loggedInUser', loggedInUser)
+
+    
 
     const productFetchStatus=useSelector(selectProductFetchStatus)
 
